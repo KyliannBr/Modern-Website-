@@ -8,14 +8,17 @@
     --pink: rgb(255, 0, 136);
     --blue: rgb(0, 98, 255);
     --darkblue: #001057;
+    --lightGrey: #f1f5f8;
     --grey: #dddddd;
     --black: #0a0c10;
     --transition: all .3s ease-out;
     --transitionBezier : all 1s cubic-bezier(.5,.21,.47,1);
+    --letterSpacing : .15rem;
 }
 
 main {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: transparent;
 }
 
 .sidebar-show {
@@ -28,6 +31,12 @@ main {
     opacity: 0;
     transform: translateY(-100%);
     transition: var(--transitionBezier);
+}
+
+.active {
+    border-bottom-right-radius: .5rem;
+    border-right: var(--darkblue) .15rem solid;
+    border-bottom: var(--darkblue) .15rem solid;
 }
 
 .sidebar {
@@ -105,7 +114,7 @@ ul {
 .nav-links a {
     color: var(--black);
     font-weight: 400;
-    letter-spacing: .15rem;
+    letter-spacing: var(--letterSpacing);
     font-size: 1.2rem;
     transition: var(--transition);
     cursor: pointer;
@@ -121,4 +130,68 @@ ul {
 
 .nav-icons a {
     margin: 0 .25rem;
+}
+
+
+
+
+
+#home {
+    min-height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.title-section h2 {
+    margin-top: 3rem;
+    padding: .2em 0;
+    font-size: 4rem;
+    letter-spacing: var(--letterSpacing);
+}
+
+.title-section p {
+    padding: 1em 0;
+    letter-spacing: var(--letterSpacing);
+}
+
+.title-section h4 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.titleSeparator {
+    width: 7rem;
+    height: .25rem;
+    background-color: var(--blue);
+}
+
+.parcours {
+    margin-top: 4rem;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 100vw;
+    height: 50vh;
+    position: relative;
+    background: transparent;
+}
+
+.parcours  img {
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
