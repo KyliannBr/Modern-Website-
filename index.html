@@ -8,15 +8,14 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_media.css">
-    <script src="js/app.js"></script>
     <title>Modern Portfolio</title>
 </head>
 
 <body>
 
     <main>
-        <aside class="sidebar">
-            <boutton class="close-btn">
+        <aside class="sidebar sidebar-hidden" id="sidebar">
+            <boutton class="close-btn" id="closeBtn">
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em"
                     width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -39,7 +38,7 @@
             <div class="center-nav">
                 <div class="nav-header">
                     <img src="img/logo-lightmode.png" alt="Kyliann Brisson Logo" class="nav-logo" />
-                    <button class="toggle-btn">
+                    <button class="toggle-btn" id="toggleBtn">
                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
                             height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                             <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60
@@ -71,7 +70,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/KyliannBr?tab=repositories" target="_blank" rel="noopener noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" id="Capa_1" x="0px" y="0px" width="1.5em" height="1.5em"
                                 viewBox="0 0 438.536 438.536" style="enable-background:new 0 0 438.536 438.536;"
@@ -147,7 +146,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="mailto:brisson.kyliann12122001@gmail.com" target="_blank" rel="noopener noreferrer">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
                                 style="enable-background:new 0 0 512 512;" xml:space="preserve" width="1.5em" height=1.5em>
@@ -199,6 +198,8 @@
         </nav>
 
     </main>
+
+    <script src="js/app.js"></script>
 
 </body>
 
