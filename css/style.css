@@ -11,6 +11,7 @@
     --lightGrey: #f1f5f8;
     --grey: #dddddd;
     --black: #0a0c10;
+    --textColor: #17172e;
     --transition: all .3s ease-out;
     --transitionBezier : all 1s cubic-bezier(.5,.21,.47,1);
     --letterSpacing : .15rem;
@@ -34,9 +35,9 @@ main {
 }
 
 .active {
-    border-bottom-right-radius: .5rem;
+    /* border-bottom-right-radius: .5rem;
     border-right: var(--darkblue) .15rem solid;
-    border-bottom: var(--darkblue) .15rem solid;
+    border-bottom: var(--darkblue) .15rem solid; */
 }
 
 .sidebar {
@@ -160,6 +161,7 @@ ul {
     padding: .2em 0;
     font-size: 4rem;
     letter-spacing: var(--letterSpacing);
+    color: var(--textColor);
 }
 
 .title-section p {
