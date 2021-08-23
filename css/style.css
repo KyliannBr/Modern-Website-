@@ -160,17 +160,23 @@ section {
 
 #home {
     z-index: 3;
-    background-color: #ff0000;
+    background-color: #ca8c8c;
 }
 
 #projets {
     z-index: 2;
-    background-color: #001057;
+    background-color: #006b17;
+    place-content: center;
+    place-items: center;
+    color: #fff;
 }
 
 #competences {
     z-index: 1;
-    background-color: #16cab2;
+    background-color: #008674;
+    place-content: center;
+    place-items: center;
+    color: #fff;
 }
 
 
