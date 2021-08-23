@@ -173,6 +173,10 @@ section {
     background-color: #16cab2;
 }
 
+
+/*                                          HOME                                          */
+
+
 .title-section {
     display: flex;
     flex-direction: column;
@@ -234,7 +238,8 @@ section {
 }
 
 .bottom p {
-    margin: 0 7rem;
+    margin: 1rem 6rem;
+    text-align: center;
 }
 
 .circle {
@@ -255,3 +260,46 @@ section {
 }
 
 
+/*                                          PROJETS                                          */
+
+
+.container {
+    display: grid; 
+    grid-template-columns: 5vw 90vw; 
+    grid-template-rows: 5vh 85vh; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "l0 l0"
+    "l1 r1"; 
+}
+
+.container h2 {
+    grid-area: l0;
+    text-align: center;
+}
+
+.leftText  {
+    grid-area: l1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftText p {
+    height: 30px;
+    margin: 1.5rem 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightProgressBar {
+    display: flex;
+    flex-direction: column;
+    grid-area: r1;
+}
+
+.rightProgressBar progress {
+    height: 30px;
+    width: 80vw;
+    margin: 1.5rem 5rem;
+}
