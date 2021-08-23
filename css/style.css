@@ -17,6 +17,11 @@
     --letterSpacing : .15rem;
 }
 
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 0;
+}
+
 main {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: transparent;
@@ -136,15 +141,36 @@ ul {
 
 
 
+.disableSection {
+    transform: translateX(-100%);
+}
 
-#home {
-    min-height: 100vh;
+section {
+    height: 100vh;
     width: 100%;
-    top: 0;
+    top: 5rem;
     left: 0;
     display: flex;
     place-items: center;
     flex-direction: column;
+    transition: var(--transitionBezier);
+
+    position: absolute;
+}
+
+#home {
+    z-index: 3;
+    background-color: #ff0000;
+}
+
+#projets {
+    z-index: 2;
+    background-color: #001057;
+}
+
+#competences {
+    z-index: 1;
+    background-color: #16cab2;
 }
 
 .title-section {
@@ -157,9 +183,10 @@ ul {
 }
 
 .title-section h2 {
+    word-wrap:break-word;
     margin-top: 3rem;
     padding: .2em 0;
-    font-size: 4rem;
+    font-size: 2rem;
     letter-spacing: var(--letterSpacing);
     color: var(--textColor);
 }
@@ -182,18 +209,49 @@ ul {
 
 .parcours {
     margin-top: 4rem;
-    /* display: flex;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center; */
-    width: 100vw;
-    height: 50vh;
+    justify-content: center;
+    width: 70vw;
     position: relative;
-    background: transparent;
 }
 
-.parcours  img {
-    z-index: -2;
-    position: absolute;
+.top {
     width: 100%;
-    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
+
+.bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom p {
+    margin: 0 7rem;
+}
+
+.circle {
+    border: var(--blue) 5px solid;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
+.circle svg {
+    height: 100px;
+    width: 100px;
+}
+
+.line {
+    background-color: var(--blue);
+    width: 5rem;
+    height: 5px;
+}
+
+

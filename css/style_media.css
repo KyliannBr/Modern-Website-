@@ -13,4 +13,8 @@
     .toggle-btn {
         display: none;
     }
+
+    .right {
+        align-items: center;
+    }
 }
